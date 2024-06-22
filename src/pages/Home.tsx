@@ -28,6 +28,7 @@ const Home = () => {
       if (res.ok) {
         const response = await res.json();
         console.log("Response from API ==> ", response);
+        window.alert('Data saved ..!')
       } else {
         console.error("Failed to add user:", res.status);
       }
